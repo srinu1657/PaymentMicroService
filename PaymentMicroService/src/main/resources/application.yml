@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: PaymentMicroService
+
+server:
+  port: 8080
+
+#Eurke server location
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
